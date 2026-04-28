@@ -1,0 +1,14 @@
+1..Simple Probability
+# Taking input from user
+fiction= int(input("Enter number of fiction book: "))
+nonfiction= int(input("Enter number of nonfiction book: "))
+total=fiction+nonfiction
+
+# Checking condition
+if total == 0:
+    print("Total outcomes cannot be zero")
+else:
+    prob_fiction =fiction / total
+    prob_nonfiction =nonfiction / total
+    print("P(fiction) =", prob_fiction)
+    print("P(nonfiction) =", prob_nonfiction)
